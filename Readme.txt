@@ -1,13 +1,8 @@
-Script written to be able to puch any prewritten set of commands
-to multiple Cisco IOS switches/routers.  Please see .\devices\devicesExample.txt 
-as a reference for declaring target devices in the devices.txt file.
-Please see .\script\scriptExample.txt as a reference for how to 
-format config commands to send to target devices in the script.txt file.
+This script is meant to update the hostname on Cisco IOS devices.
+The new hostname and taget IP is located in .\devices\devices.txt
+with the format depicted below.  Please see .\devices\devicesExample.txt
+for formatting example.
 
-
-
-Prereq:
-Python3
-Netmiko
-Devices listed in .\devices\devices.txt
-IOS commands listed in .\script\script.txt
+switch-3560 10.0.0.1
+switch-2950 10.0.0.2
+hostname 192.168.1.1
